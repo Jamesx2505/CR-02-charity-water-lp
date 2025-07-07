@@ -6,30 +6,34 @@
   <title>Charity: Water Landing Page</title>
   <style>
     body {
-      font-family: 'Proxima Nova'
+      font-family: 'Proxima Nova';
       margin: 0;
       padding: 0;
+      color: #222;
+      font-size: 1.3em; /* Make all text larger */
     }
     .logo-header {
       width: 100%;
       background: transparent;
-      padding: 10px 0 0 20px;
+      padding: 24px 0 0 40px; /* More space around logo */
       text-align: left;
     }
     .logo-img {
-      max-width: 100px;
+      max-width: 140px; /* Larger logo */
       height: auto;
       display: block;
     }
     .main-content {
       display: flex;
       flex-direction: row;
-      padding: 20px;
-      align-items: stretch; /* Make children the same height */
+      padding: 40px; /* More space around content */
+      align-items: stretch;
+      max-width: 1200px; /* Limit width for readability */
+      margin: 0 auto; /* Center on page */
     }
     .main {
       flex: 3;
-      padding-right: 20px;
+      padding-right: 40px; /* More space between columns */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -44,15 +48,17 @@
     }
     .text-section h2 {
       color: #222;
+      font-size: 2.2em;
     }
     .text-section button {
       background-color: #ffc907;
       color: #222;
       border: none;
-      padding: 10px 20px;
+      padding: 16px 36px;
       border-radius: 5px;
       cursor: pointer;
       font-weight: bold;
+      font-size: 1.1em;
     }
     .text-section button:hover {
       background-color: #ff902a;
@@ -60,20 +66,21 @@
     }
     .footer {
       text-align: center;
-      padding: 10px 0;
+      padding: 24px 0;
       background-color: #239df7;
       color: #222; /* Black text for footer */
       position: relative;
       bottom: 0;
       width: 100%;
+      font-size: 1.1em;
     }
     /* New styles for the right side */
     .right-side {
       flex: 1;
       background-color: #239df7;
       border-radius: 8px;
-      margin-left: 20px;
-      padding: 20px;
+      margin-left: 40px;
+      padding: 40px;
       color: white;
       display: flex;
       align-items: center; /* Center text-section vertically */
@@ -83,15 +90,22 @@
       min-height: 350px;
     }
     /* Responsive: stack on small screens */
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
       .main-content {
         flex-direction: column;
-        align-items: stretch;
+        padding: 20px;
+        max-width: 100%;
+      }
+      .main {
+        padding-right: 0;
       }
       .right-side {
         margin-left: 0;
         margin-top: 20px;
-        border-radius: 8px;
+        padding: 20px;
+      }
+      .logo-header {
+        padding: 16px 0 0 16px;
       }
     }
   </style>
