@@ -24,23 +24,28 @@
       justify-content: center;
     }
     .text-section {
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 8px;
+      background-color: transparent; /* Remove gray background */
+      color: white; /* White text for contrast on blue */
+      padding: 0;
+      border-radius: 0;
+      width: 100%;
+      text-align: center;
     }
     .text-section h2 {
-      color: #239df7;
+      color: #fff;
     }
     .text-section button {
-      background-color: #239df7;
-      color: white;
+      background-color: #ffc907;
+      color: #222;
       border: none;
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
+      font-weight: bold;
     }
     .text-section button:hover {
-      background-color: #1a7bbf;
+      background-color: #ff902a;
+      color: #fff;
     }
     .footer {
       text-align: center;
@@ -60,8 +65,11 @@
       padding: 20px;
       color: white;
       display: flex;
-      align-items: stretch;
+      align-items: center; /* Center text-section vertically */
+      justify-content: center; /* Center text-section horizontally */
       min-height: 0;
+      /* Make the blue section fill the same height as the main area */
+      min-height: 350px;
     }
     /* Responsive: stack on small screens */
     @media (max-width: 700px) {
