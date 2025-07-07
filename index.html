@@ -15,8 +15,17 @@
       color: white;
       padding: 10px 0;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
     }
-    .header img {
+    .logo-left {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    .logo-left img {
       max-width: 100px;
     }
     .main-content {
@@ -27,10 +36,6 @@
     .main {
       flex: 3;
       padding-right: 20px;
-    }
-    .image-section img {
-      max-width: 100%;
-      height: auto;
     }
     .text-section {
       background-color: #f4f4f4;
@@ -73,14 +78,14 @@
 </head>
 <body>
   <div class="header">
-    <img src="img/cw_logo.png" alt="charity: water logo" />
-    <h1>charity: water</h1>
+    <!-- Logo on the left -->
+    <div class="logo-left">
+      <img src="img/cw_logo.png" alt="charity: water logo" />
+    </div>
   </div>
   <div class="main-content">
     <div class="main">
-      <div class="image-section">
-        <img src="https://via.placeholder.com/600x400?text=Smiling+Girl+With+Clean+Water" alt="Girl using clean water" />
-      </div>
+      <!-- Removed the placeholder image, only content remains -->
       <div class="text-section">
         <h2>It Starts with Water. <br>It Ends with Hope.</h2>
         <p>
