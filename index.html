@@ -26,33 +26,29 @@
     .main-content {
       display: flex;
       flex-direction: row;
-      padding: 0;
+      padding: 40px; /* More space around content */
       align-items: stretch;
-      max-width: 100vw;
-      min-height: 100vh;
-      margin: 0;
+      max-width: 1200px; /* Limit width for readability */
+      margin: 0 auto; /* Center on page */
     }
     .main {
-      flex: 1;
-      padding: 0;
+      flex: 3;
+      padding-right: 40px; /* More space between columns */
       display: flex;
       flex-direction: column;
       justify-content: center;
-      min-width: 0;
     }
     .hero-image-section {
       width: 100%;
-      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     .hero-image-section img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      border-radius: 0;
+      max-width: 100%;
+      border-radius: 8px;
       display: block;
+      height: auto;
     }
     .text-section {
       background-color: transparent; /* Remove gray background */
@@ -94,35 +90,38 @@
     .right-side {
       flex: 1;
       background-color: #239df7;
-      border-radius: 0;
-      margin-left: 0;
+      border-radius: 8px;
+      margin-left: 40px;
       padding: 40px;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      max-width: 50vw;
+      min-height: 0;
+      min-height: 350px;
+      max-width: none;
     }
     /* Responsive: stack on small screens */
     @media (max-width: 900px) {
       .main-content {
         flex-direction: column;
-        max-width: 100vw;
-        min-height: 100vh;
-      }
-      .main, .right-side {
-        min-width: 0;
-        max-width: 100vw;
-        min-height: 50vh;
         padding: 20px;
+        max-width: 100%;
       }
-      .hero-image-section, .hero-image-section img {
-        height: 50vh;
-        width: 100vw;
+      .main {
+        padding-right: 0;
+      }
+      .right-side {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 20px;
       }
       .logo-header {
         padding: 16px 0 0 16px;
+      }
+      .hero-image-section img {
+        max-width: 100%;
+        height: auto;
       }
     }
   </style>
