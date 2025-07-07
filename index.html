@@ -10,7 +10,10 @@
       margin: 0;
       padding: 0;
       color: #222;
-      font-size: 1.3em; /* Make all text larger */
+      font-size: 1.3em;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     .logo-header {
       width: 100%;
@@ -30,6 +33,7 @@
       align-items: stretch;
       max-width: 1200px; /* Limit width for readability */
       margin: 0 auto; /* Center on page */
+      flex: 1 0 auto;
     }
     .main {
       flex: 3;
@@ -88,6 +92,8 @@
       bottom: 0;
       width: 100%;
       font-size: 1.1em;
+      flex-shrink: 0;
+      margin-bottom: 0;
     }
     /* New styles for the right side */
     .right-side {
