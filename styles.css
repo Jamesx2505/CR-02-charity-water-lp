@@ -21,7 +21,7 @@ Fonts:
 /* Charity: Water Landing Page Styles */
 body {
   background-color: #fff7e1; /* Soft warm background color */
-  font-family: 'Proxima Nova', Arial, sans-serif; /* Main font for the site */
+  font-family: 'Proxima Nova' /* Main font for the site */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   color: #222; /* Dark gray text color for contrast */
