@@ -196,3 +196,47 @@ section {
     width: 300px;
   }
 }
+
+/*
+  Sidebar Section Styles
+  This section appears on the right side of the page and uses the brand blue color.
+*/
+.sidebar {
+  background-color: #239df7; /* Bright blue */
+  color: #fff; /* White text for contrast */
+  padding: 32px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(35, 157, 247, 0.10);
+  position: relative;
+  margin: 24px 10px;
+  /* On larger screens, float to the right */
+}
+
+/* On screens wider than 900px, position sidebar on the right */
+@media (min-width: 900px) {
+  .sidebar {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 320px;
+    margin: 0 40px 0 0;
+  }
+  .main-content {
+    margin-right: 360px; /* Make space for sidebar */
+  }
+}
+
+/* On small screens, sidebar stacks below main content */
+@media (max-width: 899px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin: 24px 0;
+  }
+  .main-content {
+    margin-right: 0;
+  }
+}
+
+/* Add a comment for beginners */
+/* The .sidebar class creates a blue box on the right for extra info or actions. */
